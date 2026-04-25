@@ -190,7 +190,7 @@ export default function LandingPage({ slug }: LandingPageProps) {
             <video
               autoPlay muted loop playsInline
               className="h-full w-full object-cover opacity-90"
-              src="https://video.wixstatic.com/video/5d3a2a_196d0b31232e4c658ab94f9cb876282b/720p/mp4/file.mp4"
+              src="https://res.cloudinary.com/dp1vgjhsq/video/upload/v1777105289/WhatsApp_Video_2026-04-25_at_3.11.00_AM_1_aroels.mp4"
             />
             <span className="absolute bottom-3 left-3 bg-black/75 px-3 py-1.5 text-[9px] font-bold tracking-[0.18em] uppercase text-white">
               Reserva online · Sin esperas
@@ -250,7 +250,7 @@ export default function LandingPage({ slug }: LandingPageProps) {
               <video
                 autoPlay muted loop playsInline
                 className="h-full w-full object-cover opacity-90"
-                src="https://video.wixstatic.com/video/5d3a2a_196d0b31232e4c658ab94f9cb876282b/720p/mp4/file.mp4"
+                src="https://res.cloudinary.com/dp1vgjhsq/video/upload/v1777105289/WhatsApp_Video_2026-04-25_at_3.11.00_AM_1_aroels.mp4"
               />
               <span className="absolute bottom-5 left-5 bg-black/80 px-4 py-2 text-[10px] font-bold tracking-[0.2em] uppercase text-white">
                 Reserva online · Sin esperas

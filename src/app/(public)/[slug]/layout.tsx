@@ -50,12 +50,11 @@ export default async function PublicLandingLayout({
         <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
           {/* Logo */}
           <Link href={basePath} className="flex items-center gap-3">
-            <span className="inline-flex h-9 w-9 items-center justify-center bg-[var(--tenant-primary)] text-xs font-bold text-white">
-              SG
-            </span>
-            <span className="text-sm font-semibold tracking-[0.06em] uppercase">
-              {theme.brandName}
-            </span>
+            <img
+              src="https://res.cloudinary.com/dp1vgjhsq/image/upload/v1777103442/c9d87612-ba30-4563-936b-faac9dba7974.png"
+              alt={theme.brandName}
+              className="h-9 w-auto object-contain"
+            />
           </Link>
 
           {/* Nav desktop */}
@@ -63,10 +62,16 @@ export default async function PublicLandingLayout({
             <Link href={basePath} className="transition hover:text-black">
               Inicio
             </Link>
-            <Link href={`${basePath}/galeria`} className="transition hover:text-black">
+            <Link
+              href={`${basePath}/galeria`}
+              className="transition hover:text-black"
+            >
               Galería
             </Link>
-            <Link href={`${basePath}/galeria`} className="transition hover:text-black">
+            <Link
+              href={`${basePath}/productos`}
+              className="transition hover:text-black"
+            >
               Productos
             </Link>
             <Link
@@ -93,7 +98,9 @@ export default async function PublicLandingLayout({
 
       <footer className="mt-auto border-t border-black/10 bg-white/90">
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-3 px-6 py-6 text-xs tracking-[0.1em] uppercase text-[var(--tenant-muted)] sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} {theme.brandName}</p>
+          <p>
+            © {new Date().getFullYear()} {theme.brandName}
+          </p>
           <p>Barbería · Reservas online · Atención personalizada</p>
         </div>
       </footer>
