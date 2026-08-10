@@ -170,27 +170,26 @@ export default async function PublicLandingLayout({
       </div>
 
 {/* Barra inferior */}
-<div className="mt-4 px-2 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 text-[11px] tracking-[0.08em] uppercase text-[var(--text-muted)]">
-  <p>
-    © {new Date().getFullYear()} {theme.brandName} · Todos los derechos reservados
-  </p>
-
-  <p>Barbería · Reservas online · Atención personalizada</p>
-</div>
-
-<div className="mt-8 flex justify-center">
-  <a
-    href="https://www.instagram.com/solvegrades.com_/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="opacity-40 hover:opacity-80 transition-opacity"
-  >
-    <img
-      src="https://res.cloudinary.com/dp1vgjhsq/image/upload/v1778834655/WhatsApp_Image_2026-05-15_at_3.21.36_AM-removebg-preview_wtgmkr.png"
-      alt="Designed & Built by SolveGrades"
-      className="h-14 w-auto object-contain invert"
-    />
-  </a>
+<div className="mt-4 flex flex-col gap-3 border-t border-transparent/5 px-6">
+  <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-3 py-5 sm:flex-row">
+    <p className="text-xs text-gray-500">
+      © {new Date().getFullYear()} {theme.brandName}. Todos los derechos reservados.
+    </p>
+    <div className="flex items-center gap-4">
+      <a
+        href="https://solvegrades.com/nosotros/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="shrink-0 transition-opacity hover:opacity-80"
+      >
+        <img
+          src="https://res.cloudinary.com/dp1vgjhsq/image/upload/v1778834655/WhatsApp_Image_2026-05-15_at_3.21.36_AM-removebg-preview_wtgmkr.png"
+          alt="SolveGrades"
+          className="h-10 opacity-70 invert transition hover:opacity-100 dark:invert-0"
+        />
+      </a>
+    </div>
+  </div>
 </div>
     </footer>
   );
